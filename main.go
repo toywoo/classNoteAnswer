@@ -3,6 +3,7 @@ package main
 import (
 	first_problem "classNoteAnswer/firstProblem"
 	"classNoteAnswer/statement"
+	thirdproblem "classNoteAnswer/thirdProblem"
 	"fmt"
 )
 
@@ -29,6 +30,12 @@ func main() {
 						 3_printing_star.go
 						 4_mini_console_program.go
 						 5_find_single_digit.go
+		
+		3 thirdProblem	 2_max_min.go
+						 3_modulize_find_sigle_digit.go
+						 6_grow_dog.go
+						 7_url_decomposer.go
+						 8_linked_list.go
 	예시 | 2 statement > 1_odd_or_even.go 실행시
 	>> exec 2 1
 		
@@ -61,6 +68,21 @@ func main() {
 					statement.MiniConsoleProgram()
 				case 5:
 					statement.FindSingleDigit()
+				default:
+					fmt.Println("명령어를 잘못 입력하셨습니다.")
+				}
+			case 3:
+				switch fileNum {
+				case 2:
+					thirdproblem.FindMaxMin()
+				case 3:
+					thirdproblem.FindSingleDigit()
+				case 6:
+					thirdproblem.GrowDog()
+				case 7:
+					thirdproblem.URLDecomposer()
+				case 8:
+					thirdproblem.LinkedList()
 				default:
 					fmt.Println("명령어를 잘못 입력하셨습니다.")
 				}
